@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="preloader">
+        <div class="loading-text">
+            <h2>Loading ...</h2>
+        </div>
+        <div class="loader"></div>
+    </div>
     <nav>
         <div class="logo">
             <a href="index.html">
@@ -125,5 +131,12 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
 </body>
 </html>
