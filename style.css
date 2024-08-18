@@ -3,6 +3,8 @@ body, html {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    transform: translateZ(0);
+    will-change: transform;
     color: #fff;
     background-color: #000;
     height: 100%;
