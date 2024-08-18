@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    <div id="preloader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+    </div>
     <main>
         <section id="book-appointment" class="appointment-form-section">
             <div class="container">
@@ -59,4 +69,12 @@
     </main>
 </body>
 <script src="contact-submit.js"></script>
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+        loader.style.zIndex = -2;
+    })
+</script>
 </html>
