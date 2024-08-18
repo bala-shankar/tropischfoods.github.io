@@ -38,7 +38,7 @@ const startCountdown = () => {
         // When the countdown reaches zero, redirect to the home page
         if (countdownTime === 0) {
             clearInterval(countdownInterval);
-            window.location.href = "/index.html#last";
+            window.location.href = "/tropischfoods.github.io/index.html#last";
         }
     }, 1000); // Count down every 1 second (1000ms)
 };
